@@ -1,16 +1,5 @@
-//c++
-
-
-#include <iostream>
-#include <cmath>
-#include <iomanip>
-using namespace std;
-int main()
-{
-	int a;
-	double x,t;
-	cin>>a;
-	cin>>x;
-	t=(sqrt(x-1)+sqrt(x+2)+log(x*sqrt(a)+2)/log(10))/sqrt(sqrt(x+2)+sqrt(x+24)+pow(x,5));
-	cout<<fixed<<setprecision(2)<<t;
-}
+import math
+a,x=map(float, input().split())
+a=int(a)
+t=(pow(x-1,1/2)+pow(x+2,1/2)+math.log(x*pow(a, 1/2)+2)/math.log(10))/pow(pow(x+2,1/2)+pow(x+24,1/2)+pow(x,5),1/2)
+print(format(t, '.2f'))  

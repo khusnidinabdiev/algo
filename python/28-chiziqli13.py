@@ -1,15 +1,5 @@
-//c++
-
-#include <iostream>
-#include <cmath>
-#include <iomanip>
-using namespace std;
-int main()
-{
-	int a;
-	double x,s;
-	cin>>a;
-	cin>>x;
-	s=x*sin(x/2+x/3+x/4)+(log(x*x-2)/log(10)+pow(3,a))/(cos(x+3)*sin(x+3)+8);
-	cout<<fixed<<setprecision(2)<<s;
-}
+import math
+a,x=map(float, input().split())
+a=int(a)
+s=x*math.sin(x/2+x/3+x/4)+(math.log(x*x-2)/math.log(10)+pow(3,a))/(math.cos(x+3)*math.sin(x+3)+8)
+print(format(s,'.2f'))    

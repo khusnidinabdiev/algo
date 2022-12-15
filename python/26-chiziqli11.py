@@ -1,16 +1,5 @@
-//c++
-
-
-#include <iostream>
-#include <iomanip>
-#include <cmath>
-using namespace std;
-int main()
-{
-	int a;
-	double x,y,z;
-	cin>>a;
-	cin>>x>>y;
-	z=sqrt(exp(x*y)-x*sin(a*x)-(x*x+2)/(fabs(x)+5))+sqrt(log(x*x+2)/log(exp(1))+5);
-	cout<<fixed<<setprecision(2)<<z;
-}
+import math
+a,x,y=map(float, input().split())
+a=int(a)
+s=math.sqrt(math.exp(x*y)-x*math.sin(a*x)-(x*x+2)/(abs(x)+5))+math.sqrt(math.log(x*x+2)+5)
+print(format(s,'.2f')) 
