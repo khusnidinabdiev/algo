@@ -1,0 +1,5 @@
+x,y,z=map(float, input().split())
+f=max(x+y+z,x,y,z)
+s=pow(min(x+y/2,x,y,z),2)
+print(format(f,'.2f'),end=' ')
+print(format(s,'.2f'))
