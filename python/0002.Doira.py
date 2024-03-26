@@ -6,4 +6,4 @@ b=b*b*math.pi
 b=format(b, '.2f')
 c=c*c*math.pi
 c=format(c, '.2f')
-print(f"{a} {b} {c}")    
+print(f"{a} {b} {c}")
